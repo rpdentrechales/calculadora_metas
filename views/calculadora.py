@@ -17,4 +17,5 @@ else:
 
    
 meta_rede_display = col_1.metric(label="Meta Rede",value=meta_rede)
-ajustar_rede_diplay = col_2.button("Ajustar")
+rede_popover= col_2.popover("Ajustar")
+meta_rede = rede_popover.number_input(label="Meta Rede (R$)",min_value=0.0)
