@@ -8,8 +8,13 @@ st.title("Calculadora de Metas")
 
 col_1,col_2,spacer = st.columns([1,1,5])
 
-with col_1:
+if 'meta_rede' in st.session_state:
     
-  meta_rede = st.number_input(label="Meta Rede (R$)",format="%0.2f")
+    meta_rede = st.session_state['meta_rede']
 
-st.write(meta_rede)
+else:
+   meta_rede = 0
+
+   
+meta_rede_display = col_1.metric(label="Meta Rede",value=meta_rede)
+ajustar_rede_diplay = col_2.button("Ajustar")
