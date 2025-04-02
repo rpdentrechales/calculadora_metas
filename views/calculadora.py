@@ -6,6 +6,6 @@ st.set_page_config(page_title="Calculadora de Metas", page_icon="💎",layout="w
 
 st.title("Calculadora de Metas")
 
-porcentagem = st.slider(label="porcentagem", min_value=0, max_value=100, step=1,label_visibility="hidden")
+porcentagem = st.number_input(label="porcentagem", min_value=0, max_value=100,label_visibility="hidden")
 
 st.write(porcentagem)
