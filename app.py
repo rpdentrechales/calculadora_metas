@@ -1,10 +1,10 @@
 import streamlit as st
 
 # --- PAGE SETUP ---
-sample_page = st.Page(
-    "views/page_1.py",
-    title="Sample Page 1",
-    icon=":material/thumb_up:",
+calculadora_page = st.Page(
+    "views/calculadora.py",
+    title="Calculadora de metas",
+    icon=":material/calculate:",
     default=True,
 )
 
@@ -14,7 +14,7 @@ sample_page = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "Pages": [sample_page]
+        "Pages": [calculadora_page]
     }
 )
 
