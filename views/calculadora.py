@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
-from auxiliar import *
+from auxiliar.aux_display import *
 
 st.set_page_config(page_title="Calculadora de Metas", page_icon="💎",layout="wide")
 
