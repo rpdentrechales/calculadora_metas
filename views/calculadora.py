@@ -6,6 +6,10 @@ st.set_page_config(page_title="Calculadora de Metas", page_icon="💎",layout="w
 
 st.title("Calculadora de Metas")
 
-porcentagem = st.number_input(label="porcentagem", min_value=0.0, max_value=100.0,label_visibility="hidden")
+col_1,col_2,spacer = st.columns([1,1,10])
 
-st.write(porcentagem)
+with col_1:
+    
+  meta_rede = st.number_input(label="Meta Rede")
+
+st.write(meta_rede)
