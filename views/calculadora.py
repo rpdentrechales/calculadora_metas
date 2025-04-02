@@ -6,7 +6,7 @@ st.set_page_config(page_title="Calculadora de Metas", page_icon="💎",layout="w
 
 st.title("Calculadora de Metas")
 
-col_1,col_2,spacer = st.columns([1,1,5])
+col_1,col_2,spacer = st.columns([1,1,5],gap="small",vertical_alignment="center")
 
 if 'meta_rede' in st.session_state:
     
