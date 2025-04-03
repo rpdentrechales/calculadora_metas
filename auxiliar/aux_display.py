@@ -40,3 +40,19 @@ def imprimir_popover(label,key, grid):
                                                     "update_value":toggle_input_key})
     
     return popover
+
+
+def iniciar_variaveis(lista_de_variaveis):
+
+    for variavel in lista_de_variaveis:
+
+        if variavel in st.session_state:
+            
+            variavel = st.session_state[variavel]
+
+        else:
+            variavel = {"value":0,
+                            "dont_use":True}
+            st.session_state[variavel] = variavel
+    
+    return
