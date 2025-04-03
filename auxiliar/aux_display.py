@@ -21,7 +21,7 @@ def imprimir_popover(label,key, grid):
     number_input_key = f"{key}_number"
     toggle_input_key = f"{key}_toggle"
 
-    number_input = popover.number_input(label=label,
+    popover.number_input(label=label,
                                         min_value=0.0,
                                         value=None,
                                         on_change=atualizar_valores,
@@ -30,7 +30,7 @@ def imprimir_popover(label,key, grid):
                                                     "update_arg":"value",
                                                     "update_value":number_input_key})
 
-    toggle_input = popover.toggle(label="Calcular depois",
+    popover.toggle(label="Calcular depois",
                                         value=False,
                                         on_change=atualizar_valores,
                                         key=toggle_input_key,
