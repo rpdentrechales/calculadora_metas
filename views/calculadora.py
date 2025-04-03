@@ -14,8 +14,8 @@ if 'meta_rede' in st.session_state:
     meta_rede = st.session_state['meta_rede']
 
 else:
-   meta_rede = {"value":None,
-                "dont_use":False}
+   meta_rede = {"value":0,
+                "dont_use":True}
    st.session_state['meta_rede'] = meta_rede
 
    
