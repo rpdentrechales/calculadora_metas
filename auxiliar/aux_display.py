@@ -32,7 +32,7 @@ def imprimir_popover(label,key, grid):
                                                     "update_value":number_input_key})
 
     popover.toggle(label="Calcular depois",
-                                        value=False,
+                                        value=True,
                                         on_change=atualizar_valores,
                                         key=toggle_input_key,
                                         kwargs = {"update_var":key,
