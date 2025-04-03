@@ -7,6 +7,8 @@ st.set_page_config(page_title="Calculadora de Metas", page_icon="💎",layout="w
 
 st.title("Calculadora de Metas")
 
+st.header("Metas Totais")
+
 grid = st.columns(6,gap="small",vertical_alignment="center")
 
 lista_de_variaveis = ["total_rede","total_fb","total_google"]
