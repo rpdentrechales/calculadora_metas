@@ -44,15 +44,15 @@ def imprimir_popover(label,key, grid):
 
 def iniciar_variaveis(lista_de_variaveis):
 
-    for variavel in lista_de_variaveis:
+    for key in lista_de_variaveis:
 
-        if variavel in st.session_state:
+        if key in st.session_state:
             
-            variavel = st.session_state[variavel]
+            variavel = st.session_state[key]
 
         else:
             variavel = {"value":0,
                             "dont_use":True}
-            st.session_state[variavel] = variavel
+            st.session_state[key] = variavel
     
     return
