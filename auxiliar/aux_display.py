@@ -8,11 +8,12 @@ def imprimir_metric(nome_metrica,label_metrica,grid):
     dont_use = dados_da_metrica["dont_use"]
 
     if dont_use:
-        valor = "calcular"
+        display = "calcular"
     else:
-        valor = f"R$ {dados_da_metrica["value"]}"
+        valor = dados_da_metrica["value"]
+        display = f"R$ {valor:.2f}"
 
-    return grid.metric(label=label_metrica,value=valor)
+    return grid.metric(label=label_metrica,value=display)
 
 
 def imprimir_popover(label,key, grid):
