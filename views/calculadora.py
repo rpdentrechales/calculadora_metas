@@ -18,7 +18,7 @@ else:
                 "dont_use":False}
 
    
-meta_rede_display = grid_1.metric(label="Meta Rede",value=meta_rede)
+meta_rede_display = imprimir_metric("meta_rede","Meta Rede",grid_1)
 rede_popover= grid_2.popover("Ajustar")
 
 meta_rede = rede_popover.number_input(label="Meta Rede (R$)",
@@ -30,7 +30,7 @@ meta_rede = rede_popover.number_input(label="Meta Rede (R$)",
                                                 "update_arg":"value",
                                                 "update_value":"meta_rede_value"})
 
-meta_rede_nome = rede_popover.toggle(label="deixar em branco",
+meta_rede_nome = rede_popover.toggle(label="Calcular depois",
                                      value=False,
                                      on_change=atualizar_valores,
                                      key="meta_rede_nome",
