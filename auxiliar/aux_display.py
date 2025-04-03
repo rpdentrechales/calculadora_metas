@@ -13,3 +13,29 @@ def imprimir_metric(nome_metrica,label_metrica,grid):
         valor = dados_da_metrica["value"]
 
     return grid.metric(label=label_metrica,value=valor)
+
+
+def imprimir_popover(label,key, grid):
+    popover= grid.popover("Ajustar")
+
+    number_input_key = f"{key}_number"
+    toggle_input_key = f"{key}_toggle"
+
+    number_input = popover.number_input(label=label,
+                                        min_value=0.0,
+                                        value=None,
+                                        on_change=atualizar_valores,
+                                        key=number_input_key,
+                                        kwargs = {"update_var":key,
+                                                    "update_arg":"value",
+                                                    "update_value":number_input_key})
+
+    toggle_input = popover.toggle(label="Calcular depois",
+                                        value=False,
+                                        on_change=atualizar_valores,
+                                        key=toggle_input_key,
+                                        kwargs = {"update_var":key,
+                                                    "update_arg":"dont_use",
+                                                    "update_value":toggle_input_key})
+    
+    return popover
