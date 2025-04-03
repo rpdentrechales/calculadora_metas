@@ -15,8 +15,8 @@ iniciar_variaveis(lista_de_variaveis)
 imprimir_metric("total_rede","Total Rede",grid[0])
 imprimir_popover("Total Rede (R$)","total_rede", grid[1])
 
-imprimir_metric("total_google","Total Google",grid[0])
-imprimir_popover("Total Google (R$)","total_google", grid[1])
+imprimir_metric("total_google","Total Google",grid[2])
+imprimir_popover("Total Google (R$)","total_google", grid[3])
 
-imprimir_metric("total_fb","Total Facebook",grid[0])
-imprimir_popover("Total Facebook (R$)","total_fb", grid[1])
+imprimir_metric("total_fb","Total Facebook",grid[4])
+imprimir_popover("Total Facebook (R$)","total_fb", grid[5])
