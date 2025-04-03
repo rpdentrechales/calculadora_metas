@@ -16,6 +16,7 @@ if 'meta_rede' in st.session_state:
 else:
    meta_rede = {"value":None,
                 "dont_use":False}
+   st.session_state['meta_rede'] = meta_rede
 
    
 meta_rede_display = imprimir_metric("meta_rede","Meta Rede",grid_1)
