@@ -10,7 +10,7 @@ def imprimir_metric(nome_metrica,label_metrica,grid):
     if dont_use:
         valor = "calcular"
     else:
-        valor = dados_da_metrica["value"]
+        valor = f"R$ {dados_da_metrica["value"]}"
 
     return grid.metric(label=label_metrica,value=valor)
 
