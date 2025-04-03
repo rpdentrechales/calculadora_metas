@@ -5,7 +5,10 @@ from auxiliar.aux_display import *
 
 st.set_page_config(page_title="Calculadora de Metas", page_icon="💎",layout="wide")
 
-st.title("Calculadora de Metas")
+column_top = st.columns([4,1])
+
+column_top[0].title("Calculadora de Metas")
+column_top[1].button("Calcular Valores")
 
 st.header("Metas Totais")
 
