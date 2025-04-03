@@ -5,14 +5,14 @@ from auxiliar.aux_display import *
 
 st.set_page_config(page_title="Calculadora de Metas", page_icon="💎",layout="wide")
 
-column_top = st.columns([4,1])
+column_top = st.columns([4,1],vertical_alignment="bottom")
 
 column_top[0].title("Calculadora de Metas")
 column_top[1].button("Calcular Valores")
 
 st.header("Metas Totais")
 
-grid = st.columns(6,gap="small",vertical_alignment="center")
+grid = st.columns(6,gap="small",vertical_alignment="bottom")
 
 lista_de_variaveis = ["total_rede","total_fb","total_google"]
 iniciar_variaveis(lista_de_variaveis)
